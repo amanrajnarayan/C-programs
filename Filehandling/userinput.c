@@ -9,7 +9,7 @@ void main()
     float salary;
  
     /*  open for writing */
-    fptr = fopen("Tester.txt", "w");
+    fptr = fopen("Tester.txt", "w");//use "a" instead of "w" if you want to add data. It will not remove the existed data.
  
     if (fptr == NULL)
     {
