@@ -1,5 +1,6 @@
 #include <stdio.h>
- 
+#include <string.h> 
+
 void main()
 {
     FILE *fptr;
@@ -16,7 +17,7 @@ void main()
         return;
     }
     printf("Enter the name \n");
-    scanf("%s", name);
+    gets(name);//scanf("%s",name) will only get the string before blankspace. ex- If you entered Donuld Trump, it will only get Donald and end the program.
     fprintf(fptr, "Name    = %s\n", name);
     printf("Enter the age\n");
     scanf("%d", &age);
